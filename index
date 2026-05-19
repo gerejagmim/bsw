@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Keuangan GMIM Bukit Sion</title>
+    
+    <meta name="description" content="Aplikasi Pelaporan Keuangan GMIM Bukit Sion Watutumou">
+    <meta property="og:title" content="Keuangan GMIM Bukit Sion">
+    <meta property="og:description" content="Sistem Informasi Rencana & Realisasi Anggaran Jemaat">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Logo_GMIM.svg/200px-Logo_GMIM.svg.png">
+
+    <style>
+        /* Memastikan aplikasi memenuhi seluruh layar HP/Laptop tanpa terpotong */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Mencegah munculnya scrollbar ganda */
+            background-color: #f4f6f9;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Layar Loading sederhana sebelum Google Script termuat */
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Segoe UI', sans-serif;
+            color: #0b5ed7;
+            font-weight: bold;
+            z-index: -1; /* Berada di belakang iframe */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader">Menghubungkan ke Server...</div>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbxrkke5hsfl4rXRWA1EgqtwLL1A10_1ZLL4mroykntqn55HZ5uMumesnZUlenbrqLFv/exec" allowfullscreen></iframe>
+
+</body>
+</html>
